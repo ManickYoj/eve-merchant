@@ -8,11 +8,13 @@ REGIONS = [
   'Tash-Murkon',
   'Kador',
   'Kor-Azor',
-  'Devoid',
-  'Everyshore',
-  'Genesis',
-  'Providence',
-  'Khanid',
+  # 'Devoid',
+  # 'Everyshore',
+  # 'Genesis',
+  # 'Providence',
+  # 'Khanid',
+  # "The Bleak Lands",
+  'Solitude',
 ]
 
 ITEMS = [
@@ -60,6 +62,11 @@ ITEMS = [
   "Trigger Unit",
   "Tripped Power Circuit",
 
+  #
+  "Antimatter Reactor Unit",
+  "Ion Thruster",
+  "Sleeper Nanite Cluster",
+
   # Minerals
   "Isogen",
   "Megacyte",
@@ -74,6 +81,8 @@ ITEMS = [
 ITEM_KEYWORDS = [
   "Datacore",
   "Decryptor",
+  "Probe",
+  "Missle",
 ]
 
 for item in TYPE_IDS:

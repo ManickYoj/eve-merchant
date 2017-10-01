@@ -80,13 +80,13 @@ class Comparison(object):
 
             comparisons.append(
                 {
-                    'id' : item_bought['id'],
+                    'id': item_bought['id'],
                     'name': item_bought['name'],
-                    'unit margin': round(unit_margin, 2),
-                    'unit tax-adjusted margin': round(unit_tax_adjusted_margin, 2),
-                    'unit buy price': round(unit_buy_price, 2),
-                    'unit sell price': round(unit_sell_price, 2),
-                    'unit tax-adjusted percent margin': round(unit_tax_adjusted_percent_margin, 1),
+                    'margin': round(unit_margin, 2),
+                    'TA margin': round(unit_tax_adjusted_margin, 2),
+                    'buy price': round(unit_buy_price, 2),
+                    'sell price': round(unit_sell_price, 2),
+                    'TA percent margin': round(unit_tax_adjusted_percent_margin, 1),
                 }
             )
 

@@ -11,12 +11,12 @@ ORIGIN = 'Kador'
 DESTINATION = 'Domain'
 SHOW_COLUMNS = [
   'name',
-  'unit buy price',
-  'unit sell price',
-  'unit tax-adjusted margin',
-  'unit tax-adjusted percent margin',
+  'buy price',
+  'sell price',
+  'TA margin',
+  'TA percent margin',
 ]
-SORT_BY = 'unit tax-adjusted margin'
+SORT_BY = 'TA percent margin'
 
 
 # SCRIPT ---------------------------------------------------------------------
@@ -30,7 +30,7 @@ def run(origin, destination, show_columns=SHOW_COLUMNS, sort_by=SORT_BY):
     table.field_names = reader.fieldnames
 
     for row in reader:
-      if float(row['unit tax-adjusted margin']) < 0:
+      if float(row['TA margin']) < 0:
         continue
 
       output_row = []
