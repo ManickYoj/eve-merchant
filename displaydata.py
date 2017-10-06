@@ -23,9 +23,13 @@ SORT_BY = 'TA percent margin'
 
 def run(origin, destination, show_columns=SHOW_COLUMNS, sort_by=SORT_BY):
   filename = '{}-to-{}.csv'.format(origin, destination)
+  relative_path = os.path.join('output', filename)
   table = PrettyTable()
 
-  with open(os.path.join('output', filename)) as csvfile:
+  if not os.path.isfile(relative_path):
+    raise FileNotFoundError("Data for these regions has not been retreived.")
+
+  with open(relative_path) as csvfile:
     reader = csv.DictReader(csvfile)
     table.field_names = reader.fieldnames
 

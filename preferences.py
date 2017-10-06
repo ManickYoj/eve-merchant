@@ -13,13 +13,15 @@ REGIONS = [
   # 'Genesis',
   # 'Providence',
   # 'Khanid',
-  # "The Bleak Lands",
+  "The Bleak Lands",
   'Solitude',
 ]
 
 ITEMS = [
-  # Datacores as keyword
-  # Decryptors as keyword
+  # Anything containing the word 'Datacores'
+  # Anything containing the word 'Decryptors'
+  # Anything containing the word 'Probe'
+  # Anything containing the word 'Missle'
 
   # Ancient Salvage
   'Electromechanical Hull Sheeting',
