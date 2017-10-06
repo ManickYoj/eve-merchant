@@ -25,7 +25,7 @@ def main(origin, destination, refresh, sort_by):
     if not refresh:
       retrievedata.run(
         region_names=[origin, destination],
-        item_ids=[item[0] for item in constants.TYPE_IDS]
+        # item_ids=[item[0] for item in constants.TYPE_IDS]
       )
 
       try:
