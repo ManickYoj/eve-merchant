@@ -84,7 +84,17 @@ ITEM_KEYWORDS = [
   "Datacore",
   "Decryptor",
   "Probe",
-  "Missle",
+  "Missile",
+  "Rocket",
+  "Torpedo",
+  "Implants",
+  "Alpha",
+  "Beta",
+  "Gamma",
+  "Delta",
+  "Epsilon",
+  "Skill",
+  "Fullerite",
 ]
 
 for item in TYPE_IDS:
