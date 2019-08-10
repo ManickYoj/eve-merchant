@@ -8,21 +8,16 @@ REGIONS = [
   'Tash-Murkon',
   'Kador',
   'Kor-Azor',
-  # 'Devoid',
-  # 'Everyshore',
-  # 'Genesis',
-  # 'Providence',
-  # 'Khanid',
-  "The Bleak Lands",
+  'Devoid',
+  'Everyshore',
+  'Genesis',
+  'Khanid',
+  'The Forge',
+  'The Bleak Lands',
   'Solitude',
 ]
 
 ITEMS = [
-  # Anything containing the word 'Datacores'
-  # Anything containing the word 'Decryptors'
-  # Anything containing the word 'Probe'
-  # Anything containing the word 'Missle'
-
   # Ancient Salvage
   'Electromechanical Hull Sheeting',
   'Emergent Combat Analyzer',
