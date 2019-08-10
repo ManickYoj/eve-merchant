@@ -10,6 +10,7 @@ With python 3 installed, clone this repo into the directory of your choosing wit
 `git clone git@github.com:ManickYoj/eve-merchant.git`
 
 Then download the dependencies using pip.
+
 `pip3 install -r requirements.txt`
 
 ### Usage
