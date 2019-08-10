@@ -40,18 +40,9 @@ def run(origin, destination, show_columns=SHOW_COLUMNS, sort_by=SORT_BY):
       output_row = []
       for value in row.values():
         try:
-          # Decimal acrobatics to get decimals to nicely display 2 points
-          # after the decimal
-          output_row.append(
-            Decimal(
-              Decimal(
-                float(value)
-              ).quantize(
-                Decimal('.01')
-              )
-            )
-          )
-        except ValueError:
+          formatted_val = '{:,.2f}'.format(float(value))
+          output_row.append(formatted_val)
+        except ValueError as e:
           output_row.append(value)
 
       table.add_row(output_row)
