@@ -105,9 +105,9 @@ class Comparison(object):
           'id': item_bought['id'],
           'name': item_bought['name'],
           'margin': round(unit_margin, 2),
-          'TA margin': round(unit_tax_adjusted_margin, 2),
           'buy price': round(unit_buy_price, 2),
           'sell price': round(unit_sell_price, 2),
+          'TA margin': round(unit_tax_adjusted_margin, 2),
           'TA percent margin': round(unit_tax_adjusted_percent_margin, 1),
         }
       )
@@ -131,7 +131,8 @@ class Comparison(object):
 
   def csv(self):
     filename = os.path.join('output', self.name + '.csv')
-    with open(filename, 'w', newline='') as csvfile:
+    os.makedirs(os.path.dirname(filename), exist_ok=True)
+    with open(filename, 'w+', newline='') as csvfile:
       writer = csv.DictWriter(
         csvfile,
         fieldnames=self.comparison[0].keys()
