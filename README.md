@@ -5,9 +5,12 @@ A tool for finding strong inter-regional trades in EVE Online
 
 To run this script, you must have [python 3.X.X](https://www.python.org/downloads/) installed.
 
-With python installed, clone this repo into the directory of your choosing with:
+With python 3 installed, clone this repo into the directory of your choosing with:
 
 `git clone git@github.com:ManickYoj/eve-merchant.git`
+
+Then download the dependencies using pip.
+`pip3 install -r requirements.txt`
 
 ### Usage
 
